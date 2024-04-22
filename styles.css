@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* CSS Reset */
 *,
 *::before,
@@ -15,19 +17,19 @@ img {
 }
 
 :root {
-  --bg-light-blue: #f0f8ff;
-  --bg-purple: #512888;
-  --bg-white: #fff;
-  --bg-gray: #555555;
-  --bg-dark-blue: #002147;
+  --bg-light-blue: hsl(210, 46%, 95%);
+  --bg-purple: hsl(263, 55%, 52%);
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-gray: hsl(217, 19%, 35%);
+  --bg-dark-blue: hsl(219, 29%, 14%);
 
-  --fc-platinum-gray: #e5e4e2;
-  --fc-battleship-gray: #848482;
+  --fc-platinum-gray: hsl(40, 5%, 89%);
+  --fc-battleship-gray: hsl(60, 1%, 51%);
 
-  --ff-body: sans-serif;
-  --ff-headers: sans-serif;
-  --fc-white: #fff;
-  --fc-black: #1b1b1b;
+  --ff-body: 'Barlow Semi Condensed', sans-serif;
+  --ff-headers: 'Barlow Semi Condensed', sans-serif;
+  --fc-white: hsl(0, 0%, 100%);
+  --fc-black: hsl(219, 29%, 14%);
 }
 
 /* reusable classes */
@@ -52,10 +54,10 @@ img {
 
 body {
   background: var(--bg-light-blue);
-  font-size: 1rem;
-  font-weight: normal;
+  font-size: 0.8125rem;
+  font-weight: 500;
   font-family: var(--ff-body);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .testimonial-wrapper {
@@ -98,17 +100,17 @@ body {
 }
 
 .user-name {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .verified-user {
   display: block;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .testimonial-spotlight {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* card colors */
@@ -144,7 +146,7 @@ body {
 /* media queries */
 @media (min-width: 50rem) {
   .testimonial-wrapper {
-    max-width: 90rem;
+    max-width: 70rem;
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -168,7 +170,6 @@ body {
   }
 
   .testimonial-wrapper {
-    max-width: 90rem;
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
